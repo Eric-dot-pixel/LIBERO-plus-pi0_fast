@@ -41,3 +41,5 @@ And then install the openpi dependencies following the guidance in [Openpi](http
 Please refer to the [openpi-libero](https://github.com/Physical-Intelligence/openpi/tree/main/examples/libero) for detailed instructions, and here we provide a simple example for evaluating pi0-fast using [without docker method](https://github.com/Physical-Intelligence/openpi/tree/main/examples/libero#without-docker-not-recommended)
 
 Note that the openpi official has released new models so their repo files have been revised to new models, here I use the pi0-fast model to launch the server, see `serve_policy_pi0.py` and `serve_policy_fast.py`, which just vary in the model name.
+
+After you launch the server, run `run.py` to evaluate, which is a simple example for libero_spatial-multi_view task and modifies the `num_per_task` to 1

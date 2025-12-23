@@ -39,4 +39,5 @@ And then install the openpi dependencies following the guidance in [Openpi](http
 >Docker: As an alternative to uv installation, we provide instructions for installing openpi using Docker. If you encounter issues with your system setup, consider using Docker to simplify installation. See [Docker Setup](https://github.com/Physical-Intelligence/openpi/blob/main/docs/docker.md) for more details.
 ## Run evaluation
 Please refer to the [openpi-libero](https://github.com/Physical-Intelligence/openpi/tree/main/examples/libero) for detailed instructions, and here we provide a simple example for evaluating pi0-fast using [without docker method](https://github.com/Physical-Intelligence/openpi/tree/main/examples/libero#without-docker-not-recommended)
-Note that the openpi official has released new models so their repo files have been revised to new models, here I use the pi0-fast model to launch the server, 
+
+Note that the openpi official has released new models so their repo files have been revised to new models, here I use the pi0-fast model to launch the server, see `serve_policy_pi0.py` and `serve_policy_fast.py`, which just vary in the model name.

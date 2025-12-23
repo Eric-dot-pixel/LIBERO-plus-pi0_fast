@@ -43,3 +43,13 @@ Please refer to the [openpi-libero](https://github.com/Physical-Intelligence/ope
 Note that the openpi official has released new models so their repo files have been revised to new models, here I use the pi0-fast model to launch the server, see `serve_policy_pi0.py` and `serve_policy_fast.py`, which just vary in the model name.
 
 After you launch the server, run `run.py` to evaluate, which is a simple example for libero_spatial-multi_view task and modifies the `num_trials_per_task` to 1
+
+And if you encounter some egl or mujoco rendering problems, try to use `export MUJOCO_GL=osmesa` and follow the instructions below
+```
+pip install --upgrade pyrender
+apt install  libosmesa6  libosmesa6-dev
+cd /opt/conda/envs/libero/bin/../lib/ # the lib path under your environment
+mv libstdc++.so.6 libstdc++.so.6.old
+ln -s /usr/lib/x86_64-linux-gnu/libstdc++.so.6 libstdc++.so.6
+```
+OSMESA works for me and you can also try glx etc. if necessary.

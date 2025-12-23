@@ -42,4 +42,4 @@ Please refer to the [openpi-libero](https://github.com/Physical-Intelligence/ope
 
 Note that the openpi official has released new models so their repo files have been revised to new models, here I use the pi0-fast model to launch the server, see `serve_policy_pi0.py` and `serve_policy_fast.py`, which just vary in the model name.
 
-After you launch the server, run `run.py` to evaluate, which is a simple example for libero_spatial-multi_view task and modifies the `num_per_task` to 1
+After you launch the server, run `run.py` to evaluate, which is a simple example for libero_spatial-multi_view task and modifies the `num_trials_per_task` to 1
